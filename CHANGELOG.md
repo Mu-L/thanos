@@ -18,10 +18,12 @@ We use _breaking :warning:_ to mark changes that are not backward compatible (re
 - [#3700](https://github.com/thanos-io/thanos/pull/3700) ui: make old bucket viewer UI work with vanilla Prometheus blocks
 - [#2641](https://github.com/thanos-io/thanos/issues/2641) Query Frontend: Added `--query-range.request-downsampled` flag enabling additional queries for downsampled data in case of empty or incomplete response to range request.
 - [#3792](https://github.com/thanos-io/thanos/pull/3792) Receiver: Added `--tsdb.allow-overlapping-blocks` flag to allow overlapping tsdb blocks and enable vertical compaction
+- [#3686](https://github.com/thanos-io/thanos/pull/3686) Query: Added federated metric metadata support.
 
 ### Fixed
 
 - [#3773](https://github.com/thanos-io/thanos/pull/3773) Compact: Pad compaction planner size check
+- [#3795](https://github.com/thanos-io/thanos/pull/3795) s3: A truncated "get object" response is reported as error.
 - [#3814](https://github.com/thanos-io/thanos/pull/3814) Store: Decreased memory utilisation while fetching block's chunks.
 - [#3815](https://github.com/thanos-io/thanos/pull/3815) Receive: Improve handling of empty time series from clients
 
